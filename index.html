@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+
+<style>
+table{
+width: 400px;
+}
+.center{
+text-align:center;
+}
+.center_foot{
+padding-top:40px;
+}
+.center_link{
+padding: 10px 0 10px 0;
+}
+.head_padding{
+padding:20px;
+}
+
+@keyframes anim{
+  0%{transform:rotateY(0deg);text-shadow: -5px 0px 5px rgba(0,0,0,1);}
+  50%{transform:rotateY(180deg);text-shadow: 5px 0px 5px rgba(0,0,0,1);}
+  100%{transform:rotateY(360deg);text-shadow: -5px 0px 5px rgba(0,0,0,1);}
+}
+
+.flake:hover{
+display:inline-block;
+font-size:200px;
+font-weight:bolder;
+color:lightgray;
+animation:5s anim ease-in-out infinite;
+}
+
+/*
+.dvij:hover {
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 50%;
+    width: 50%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 50%;
+  }
+}
+*/
+</style>
+
+<table style="margin: 100px auto 0;" >
+    <thead>
+    <tr>
+        <td><img src="logo.png" alt="" class="flake" width="200px "></td>
+        <td colspan="2"><img src="ban.png" alt="" height="150px" class="head_padding"></td>
+
+    </tr>
+    <tr>
+        <td colspan="3" class="center"><strong>Много текста</strong></td>
+
+    </tr>
+    <tr>
+        <td colspan="3" class="center">Еще больше текста...</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><img src="book.png" alt="" width="250px"></td>
+        <td colspan="2">
+            Элемент служит контейнером для элементов, определяющих содержимое таблицы. Любая таблица состоит из строк и
+            ячеек, которые задаются с помощью тегов Внутри допустимо использовать следующие элементы:
+            Таблицы с невидимой границей долгое время использовались для верстки веб-страниц, позволяя разделять
+            документ на модульные блоки. Подобный способ применения таблиц нашел воплощение на многих сайтах, пока ему
+            на смену не пришел более современный способ верстки с помощью слоев.
+        </td>
+
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="3" class="center center_link">
+            <img src="vk.png" alt="" width="50px">
+            <img src="vk.png" alt="" width="50px">
+            <img src="vk.png" alt="" width="50px">
+            <img src="vk.png" alt="" width="50px">
+        </td>
+
+    </tr>
+    <tr>
+        <td colspan="3" class="center">
+            © 2002–2018 Влад Мержевич, по всем вопросам пишите по адресу vlad@htmlbook.ru
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" class="center">
+            <a href="">Самоучитель HTML</a> | <a href="">Самоучитель CSS</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" class="center">
+            <a href="">Практикум</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" class="center center_foot">
+            Подпишитесь на материалы сайта по <a href="">RSS</a>
+        </td>
+    </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>
